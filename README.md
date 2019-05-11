@@ -1,6 +1,8 @@
 # PersonInformation
 基于Spring+MyBatis+Servlet整合的人员信息管理系统。
 
+主要实现的功能是部门与员工信息的增删改查以及日志处理（登录日志、系统日志、操作日志）。
+
 
 ·三层架构
 --持久层 MyBatis
