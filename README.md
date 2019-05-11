@@ -1,5 +1,7 @@
 # PersonInformation
 基于Spring+MyBatis+Servlet整合的人员信息管理系统。
+
+
 ·三层架构
 --持久层 MyBatis
 --表现层 Servlet+JSP
