@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.4//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--命名要与持久化对应接口名相对应-->
+<!--配置DepartmentDao接口的映射文件-->
+<mapper namespace="com.lzy.pi.dao.DepartmentDao">
+    <resultMap id="resultMap" type="Department">
+        <!--配置实体类的属性跟数据表表里面的对应关系-->
+        <id property="id" column="id" javaType="Integer"/>
+        <result property="name" column="name" javaType="String"/>
+        <result property="address" column="address" javaType="String"/>
+    </resultMap>
+
+    <!--配置sql 根据持久化操作接口定义的方法来配置-->
+    <!--insert有点特殊，需要调用数据库自增的规范，因此需要添加useGeneratedKeys-->
+    <insert id="insert" parameterType="Department" useGeneratedKeys="true">
+        insert into department(name,address) values(#{name},#{address})
+    </insert>
+    <delete id="delete" parameterType="Integer">
+        delete from department where id=#{id}
+    </delete>
+    <update id="update" parameterType="Department">
+        update department set name=#{name},address=#{address} where id=#{id}
+    </update>
+    <select id="selectById" parameterType="Integer" resultMap="resultMap">
+        select * from department where id=#{id}
+    </select>
+    <select id="selectAll" resultMap="resultMap">
+        select * from department
+    </select>
+</mapper>
