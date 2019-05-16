@@ -1,18 +1,18 @@
 # PersonInformation
 基于Spring+MyBatis+Servlet整合的人员信息管理系统。
 
-主要实现的功能是部门与员工信息的增删改查以及日志处理（登录日志、系统日志、操作日志）。
+主要实现的功能是部门与员工信息的增删改查以及日志处理（登录日志、系统日志、操作日志）。<br>
 
 
-·三层架构
---持久层 MyBatis
---表现层 Servlet+JSP
---Spring 管理对象、切面处理
+·三层架构<br>
+--持久层 MyBatis<br>
+--表现层 Servlet+JSP<br>
+--Spring 管理对象、切面处理<br>
 
-·基于MVC模式
---视图Jsp
---模型 JavaBean
---控制器 Servlet+JavaBean
+·基于MVC模式<br>
+--视图Jsp<br>
+--模型 JavaBean<br>
+--控制器 Servlet+JavaBean<br>
 
 部门管理
 ·部门信息的增删改查
