@@ -22,13 +22,13 @@
 --Service接口与其实现类（业务层）<br>
 --控制器（表现层）<br>
 --页面（表现层）<br>
-![image](https://github.com/striverlzy/PersonInformation/blob/master/1.png)<br>
+![image](https://github.com/striverlzy/PersonInformation/blob/master/2.png)<br>
 
 ### 员工管理<br>
 ·员工信息的增删改查<br>
 ··员工与部门的关联关系<br>
 --默认登录密码<br>
-![image](https://github.com/striverlzy/PersonInformation/blob/master/2.png)<br>
+![image](https://github.com/striverlzy/PersonInformation/blob/master/1.png)<br>
 
 ### 登录与个人中心<br>
 ·登录、退出、个人信息、修改密码<br>
